@@ -69,6 +69,11 @@ public function setVille($ville)
     return $this;
 }
 
+public function __tostring()
+{
+    return  $this->_comptecou;
+}
+
 /*public function __toString()
 {
     return "Le nom :". $this->getNom(). "<br>". "Le prénom :". $this->getPrenom()."<br>"."Date de naissance :". $this->getDatenaissance().

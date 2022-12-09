@@ -20,7 +20,7 @@ public function __construct(string $comptecou, int $solde,string $devise, titula
 }
 
 
-public function getComptecourant()
+public function getComptecou()
 {
     return $this->_comptecou;
 }
@@ -82,4 +82,12 @@ public function debiter($somme)
     echo "Le nouveau solde est de" ." ".  $this->setSolde = ($this->getSolde()-$somme)."<br>";
 }
 
+public function virement($compte2,$montant)
+{
+  
+   echo" Le compte N°".$this->_comptecou." ". "a effectué un virement de ".$montant." "."au compte N°" ." " .$compte2."<br>";
+   echo "Le nouveau solde est de" ." ".  $this->setSolde = ($this->getSolde()+$montant);
 }
+
+}
+
