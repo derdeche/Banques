@@ -26,7 +26,7 @@ $compte1->crediter(100);
 
 $compte2->debiter(50);
 
-/*$compte2->crediter(500);*/
+$compte1->virement($compte2,20);
 
 
 
