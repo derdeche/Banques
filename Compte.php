@@ -1,6 +1,6 @@
 <?php
 
-class compte{
+class Compte{
     private string $_comptecou;
     private int $_solde;
     private string $_devise;
