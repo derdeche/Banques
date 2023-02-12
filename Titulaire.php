@@ -81,7 +81,7 @@ public function __tostring()
 }*/
 
 
-
+          /*FUNCTION POUR CALCULER L'AGE DU CLIENT*/
 public function age()
 {
     $datenaissance = date_create($this->_datenaissance);
@@ -90,6 +90,7 @@ public function age()
     return $age->format('%y');
 }
 
+          /*AFFICHER INFORMATION CLIENT ET NUMERO COMPTE*/
 public function afficherinformation()
 {
     echo "Le Nom :". $this->getNom(). "<br>". "Le Prénom :". $this->getPrenom()."<br>"."Age:".$this->age()."Ans". "<br>". "Ville :". $this->getVille()."<br>"."Compte :<br>";
